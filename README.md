@@ -80,9 +80,7 @@ plt.show()
 
 
 
-hours = 7.5 model.predict([[hours]])
-print(f"\nPredicted marks for{hours} hours of study={predicted_marks[0]:2f}")
-Predicted marks for7.5 hours of study=76.508621
+<img width="817" height="104" alt="Screenshot 2025-11-12 131901" src="https://github.com/user-attachments/assets/10f7e1fa-b460-43d4-b116-a4c4abe3f6b2" />
 
 
 
