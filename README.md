@@ -9,14 +9,26 @@ To write a program to predict the marks scored by a student using the simple lin
 
 ## Algorithm
 1.Import the standard Libraries.
+
 2.Set variables for assigning dataset values.
+
 3.Import linear regression from sklearn.
+
 4.Assign the points for representing in the graph.
+
 5.Predict the regression for marks by using the representation of the graph.
+
 6.Compare the graphs and hence we obtained the linear regression for the given datas.
+
   
 
 ## Program:
+/*
+Progra m to implement the simple linear regression model for predicting the marks scored
+Developed by: Mohamed Aathil M
+ResgisterNumber:25008235
+*/
+```
 import numpy as np
 import pandas as pd 
 import matplotlib.pyplot as plt 
@@ -41,16 +53,13 @@ x_train, x_test, y_train, y_test=train_test_split(
 )
 model= LinearRegression()
 model.fit(x_train,y_train)
-
 y_pred=model.predict(x_test)
 print("\nModel Prameters:")
 print("Intercept(b0):",model.intercept_)
 print("Slope (b1):,",model.coef_[0])
-
 print("\nEvaluation Metrics:")
 print("Mean Squared Error:",mean_squared_error(y_test,y_pred))
 print("R^2 Score:",r2_score(y_test,y_pred))
-
 plt.figure(figsize=(8,6))
 plt.scatter(X, y,color='blue', label="Actual Data")
 plt.plot(x,model.predict(x),color='red', linewidth=2,label="Regression Line")
@@ -59,18 +68,28 @@ plt.ylabel("Simple Linear Regression: Predicting Marks")
 plt.legend()
 plt.grid(True)
 plt.show()
-/*
-Program to implement the simple linear regression model for predicting the marks scored.
-Developed by: Mohamed Aathil M 
-RegisterNumber:25008235  
-*/
 ```
 
-## Output:
 
-<img width="1108" height="649" alt="Screenshot 2025-11-12 105921" src="https://github.com/user-attachments/assets/9b100e8b-8c2f-47a4-8f0d-8566b7ddc5b1" />
-
+ Output:
 
 
-## Result:
+<img width="1108" height="649" alt="aathil" src="https://github.com/user-attachments/assets/56e087df-78e3-4151-8ec3-b20c9dbf4dac" />
+
+
+
+
+
+hours = 7.5 model.predict([[hours]])
+print(f"\nPredicted marks for{hours} hours of study={predicted_marks[0]:2f}")
+Predicted marks for7.5 hours of study=76.508621
+
+
+
+
+
+
+
+
+ Result:
 Thus the program to implement the simple linear regression model for predicting the marks scored is written and verified using python programming.
