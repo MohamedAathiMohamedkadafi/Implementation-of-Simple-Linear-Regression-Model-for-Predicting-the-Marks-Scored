@@ -23,8 +23,9 @@ To write a program to predict the marks scored by a student using the simple lin
   
 
 ## Program:
-/*
 ```
+/*
+
 Program to implement the simple linear regression model for predicting the marks scored
 Developed by: Mohamed Aathil M
 ResgisterNumber:25008235
@@ -56,17 +57,20 @@ x_train, x_test, y_train, y_test=train_test_split(
 model= LinearRegression()
 model.fit(x_train,y_train)
 y_pred=model.predict(x_test)
+
 print("\nModel Prameters:")
 print("Intercept(b0):",model.intercept_)
 print("Slope (b1):,",model.coef_[0])
 print("\nEvaluation Metrics:")
 print("Mean Squared Error:",mean_squared_error(y_test,y_pred))
 print("R^2 Score:",r2_score(y_test,y_pred))
+
 plt.figure(figsize=(8,6))
 plt.scatter(X, y,color='blue', label="Actual Data")
 plt.plot(x,model.predict(x),color='red', linewidth=2,label="Regression Line")
 plt.xlabel("Hours Studied")
 plt.ylabel("Simple Linear Regression: Predicting Marks")
+
 plt.legend()
 plt.grid(True)
 plt.show()
